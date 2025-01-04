@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steam Skin Prices</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -12,10 +16,17 @@
         th, td {
             border: 1px solid #ccc;
             padding: 8px;
-            text-align: left;
+            text-align: center;
         }
         th {
             background-color: #f4f4f4;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -24,13 +35,19 @@
     <table>
         <thead>
             <tr>
-                <th>Название скина</th>
-                <th>Минимальная цена</th>
-                <th>Медианная цена</th>
+                <th>Ссылка</th>
+                <th>Цена ±</th>
+                <th>Название</th>
+                <th>Количество</th>
+                <th>Цена</th>
+                <th>Общая цена</th>
+                <th>Общая ± Разница</th>
+                <th>Чистый</th>
+                <th>Профит %</th>
             </tr>
         </thead>
         <tbody id="skin-data">
-            <!-- Данные будут подгружены -->
+            <!-- Данные будут динамически добавляться -->
         </tbody>
     </table>
     <script src="script.js"></script>
